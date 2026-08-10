@@ -156,7 +156,7 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
 # poor man's data loader
 data_dir = os.path.join('data', dataset)
 if dataset=='openwebtext':
-    data_dir="../../../../openwebtext_preprocessed_data/openwebtext_data"
+    data_dir="openwebtext_data"
 def get_batch(split):
     # We recreate np.memmap every batch to avoid a memory leak, as per
     # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
