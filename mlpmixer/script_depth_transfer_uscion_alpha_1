@@ -1,0 +1,33 @@
+# Get IP address of the master node
+ip=`hostname -I | awk '{print $1}'`
+
+for depth in 2 4 8 16 32
+do
+    for lr in 1e-4 1e-3 1e-2 1e-1 1.0 
+    do
+        for seed in 1 2 3
+        do
+            root="depth_transfer/out/depth_transfer_unconstrained_scion"
+            python3 main.py \
+            --num_layers=$depth \
+            --lr=$lr \
+            --radius_input_layer=25 \
+            --radius_last_layer=500 \
+            --radiuses_hidden=25  \
+            --min_lr=1e-9 \
+            --epochs=300 \
+            --momentum=0.1 \
+            --root=$root  \
+            --optimizer=scion \
+            --projection=None \
+            --scheduler=cosine \
+            --nodes=1 \
+            --gpus=4 \
+            --ip=$ip \
+            --nr=0 \
+            --num-workers=0 \
+            --batch-size=2048 \
+            --seed=$seed 
+        done
+    done
+done
