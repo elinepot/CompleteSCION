@@ -71,19 +71,10 @@ DATA_CACHE_DIR = os.path.join(os.path.dirname(__file__), local_dir)
 os.makedirs(DATA_CACHE_DIR, exist_ok=True)
 
 # download the dataset
-# fw = load_dataset("HuggingFaceFW/fineweb", name=remote_name, split="train")
-
-# DSAM FRAMATOME VERSION:
-path = "/work/fra/shared/bases_dsam/fineweb10B/fineweb_train.parquet"
-fw = load_dataset("parquet", data_files=path, split="train", streaming=True)
+fw = load_dataset("HuggingFaceFW/fineweb", name=remote_name, split="train")
 print('fineweb dataset loading done')
 
 # init the tokenizer
-# enc = tiktoken.get_encoding("gpt2")
-
-# DSAM FRAMATOME VERSION:
-tiktoken_cache_dir = "/home/ep42de8l/path_to_tiktoken_path_folder"
-os.environ["TIKTOKEN_CACHE_DIR"] = tiktoken_cache_dir
 enc = tiktoken.get_encoding("gpt2")
 
 print('encoding loading done')
