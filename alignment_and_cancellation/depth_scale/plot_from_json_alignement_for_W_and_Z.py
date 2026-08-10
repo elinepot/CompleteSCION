@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import os
 
 
-JSON_FILE = "/home/ep42de8l/SCION/scion-main/examples/weight_alignment/alignment_metrics_for_W_and_Z_with_phi_h_lr_0.01_momentum_0.9_1000_steps.json"
-SAVE_DIR = "/home/ep42de8l/SCION/scion-main/examples/weight_alignment/alignment_plots_W_and_Z"
+JSON_FILE = "alignment_metrics_for_W_and_Z_with_phi_h_lr_0.01_momentum_0.9_1000_steps.json"
+SAVE_DIR = "alignment_plots_W_and_Z"
 
 os.makedirs(SAVE_DIR, exist_ok=True)
 
