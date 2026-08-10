@@ -21,13 +21,13 @@ The repository is organized by experiments and contains several largely independ
 
 | Directory | Details |
 |------------|---------|
-| `alignment_and_cancellation/` | Studies of alignment, residual cancellation, and update scaling across depth and width |
+| `alignment_and_cancellation/` | Studies of alignment, residual cancellation, and update scaling across depth and width (CIFAR-10) |
 | `deit/` | Depth-transfer experiments on DeiT (ImageNet) |
 | `mlpmixer/` | Depth-transfer experiments on MLP-Mixer (CIFAR-10) |
-| `modded_nanogpt/` | Depth-transfer experiments on nanoGPT trained on FineWeb |
-| `modded_nanogpt_with_Z/` | Depth-transfer experiments on nanoGPT experiments with explicit Z-scaling analysis |
-| `relative_distance_linearization/` | Feature learning and distance-from-linearization analyses |
-| `shallow_nanogpt/` | Width-transfer studies on shallow GPT models |
+| `modded_nanogpt/` | Depth-transfer experiments on nanoGPT (FineWeb) |
+| `modded_nanogpt_with_Z/` | Depth-transfer experiments on nanoGPT experiments with explicit Z-scaling analysis (FineWeb)|
+| `relative_distance_linearization/` | Feature learning and distance-from-linearization analyses (MNIST) |
+| `shallow_nanogpt/` | Width-transfer studies on shallow GPT models (Shakespeare-char) |
 
 
 
