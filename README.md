@@ -28,11 +28,3 @@ The repository is organized by experiments and contains several largely independ
 | `modded_/` | Depth-transfer experiments on nanoGPT experiments with explicit Z-scaling (FineWeb)|
 | `relative_distance_linearization/` | Feature learning and distance-from-linearization analyses (MNIST) |
 | `shallow_nanogpt/` | Width-transfer studies on shallow GPT  (Shakespeare-char) |
-
-
-
-The experiments are self-contained and executable independently. Each experimental folder contains:
-- training scripts
-- optimizer implementations
-- plotting utilities
-- configuration files (when applicable)
