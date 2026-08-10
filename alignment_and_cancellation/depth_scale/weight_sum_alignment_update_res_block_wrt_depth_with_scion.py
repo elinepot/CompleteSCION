@@ -361,7 +361,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5,), (0.5,))
 ])
 dataset = torchvision.datasets.CIFAR10(
-    root='/home/ep42de8l/MLP_CIFAR10/cifar10/', train=True, download=True, transform=transform
+    root='cifar10/', train=True, download=True, transform=transform
 )
 
 batch_size = args.batch_size
