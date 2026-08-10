@@ -1,7 +1,5 @@
 # CompleteSCION
-Official code for:
-
-> Learning Rate Transfer and Feature Learning Across Depth for Constrained Spectral Optimizers: Complete SCION
+Official code for the paper **Learning Rate Transfer and Feature Learning Across Depth for Constrained Spectral Optimizers: Complete SCION**
 
 This repository contains the code used to reproduce all experiments from the paper, including:
 
