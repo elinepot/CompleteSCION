@@ -31,7 +31,7 @@ The repository is organized by experiments and contains several largely independ
 
 
 
-The experiments are self-contained and executable independently. Each experimental folder  ,contains:
+The experiments are self-contained and executable independently. Each experimental folder contains:
 - training scripts
 - optimizer implementations
 - plotting utilities
