@@ -25,6 +25,6 @@ The repository is organized by experiments and contains several largely independ
 | `deit/` | Depth-transfer experiments on DeiT (ImageNet) |
 | `mlpmixer/` | Depth-transfer experiments on MLP-Mixer (CIFAR-10) |
 | `nanogpt/` | Depth-transfer experiments on nanoGPT (FineWeb) |
-| `modded_/` | Depth-transfer experiments on nanoGPT experiments with explicit Z-scaling (FineWeb)|
+| `nanogpt_with_Z/` | Depth-transfer experiments on nanoGPT experiments with Z scaling (FineWeb)|
 | `relative_distance_linearization/` | Feature learning and distance-from-linearization analyses (MNIST) |
-| `shallow_nanogpt/` | Width-transfer studies on shallow GPT  (Shakespeare-char) |
+| `shallow_nanogpt/` | Width-transfer experiments on shallow GPT  (Shakespeare-char) |
